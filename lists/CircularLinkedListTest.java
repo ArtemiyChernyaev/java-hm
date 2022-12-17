@@ -3,21 +3,21 @@ package lists;
 public class CircularLinkedListTest {
     public static void main(String[] args) {
 
-        CircularLinkedList<Student> list = new CircularLinkedList<>();
+        CircularLinkedList<SomeObj> list = new CircularLinkedList<>();
 
         System.out.println("Is list empty: " + list.isEmpty());
         list.print();
-        list.push(new Student("A",1));
+        list.push(new SomeObj("A"));
         list.print();
-        list.push(new Student("B",2));
+        list.push(new SomeObj("B"));
         list.print();
-        list.push(new Student("C", 3));
+        list.push(new SomeObj("C"));
         list.print();
-        list.add(0,new Student("D",4));
+        list.add(0,new SomeObj("D"));
         list.print();
-        list.add(list.getLength(),new Student("E",5));
+        list.add(list.getLength(),new SomeObj("E"));
         list.print();
-        list.add(2,new Student("F",6));
+        list.add(2,new SomeObj("F"));
         list.print();
         list.remove(0);
         list.print();
